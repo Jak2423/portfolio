@@ -3,7 +3,7 @@ export default function About() {
     <div>
       <h1 className='text-xl md:text-2xl text-primary mt-4 mb-8'>About me</h1>
       <p>
-        Hey!, My name is Javkhlan. I&apos;m a Front-End Developer located in
+        Hey!, My name is Javkhlan. I&apos;m a Front-End Developer based in
         Mongolia. I describe myself as a passionate developer who loves coding,
         open source, and the web platform.
       </p>
