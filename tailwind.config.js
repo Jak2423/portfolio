@@ -50,8 +50,8 @@ module.exports = {
 				},
 			},
 			animation: {
-				'fade-in-up': 'fade-in-up 0.5s ease-out',
-				'fade-in-down': 'fade-in-down 0.5s ease-out',
+				'fade-in-up': 'fade-in-up 0.5s linear',
+				'fade-in-down': 'fade-in-down 0.5s linear',
 			},
 		},
 	},

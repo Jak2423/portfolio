@@ -2,6 +2,13 @@ import Head from 'next/head';
 import Footer from './Footer';
 import Navbar from './Navbar';
 import { useRouter } from 'next/router';
+import { motion, AnimatePresence } from 'framer-motion';
+
+const variants = {
+	hidden: { opacity: 0, x: 0, y: -10 },
+	enter: { opacity: 1, x: 0, y: 0 },
+	exit: { opacity: 0, x: 0, y: 10 },
+};
 
 export default function Layout({ children }) {
 	const router = useRouter();
@@ -35,14 +42,28 @@ export default function Layout({ children }) {
 				<meta property='twitter:url' content='https://jak-dev.vercel.app' />
 				<meta name='twitter:title' content={meta.title} />
 				<meta name='twitter:description' content={meta.description} />
+				<meta
+					name='google-site-verification'
+					content='i8w_m0VgzzulNs1g3UM1Wkhs5vs-stgtqTkaDJFj_VA'
+				/>
 				{/* <meta name='twitter:image' content={meta.image} /> */}
 			</Head>
 			<div className='max-w-3xl mx-auto w-full px-8 py-8 min-h-screen'>
 				<Navbar />
-				<main className='animate-fade-in-up'>
-					{children}
-					<Footer />
-				</main>
+				<AnimatePresence initial={false} exitBeforeEnter>
+					<motion.main
+						key={router.asPath}
+						initial='hidden'
+						animate='enter'
+						exit='exit'
+						variants={variants}
+						transition={{ type: 'linear', duration: 0.3 }}
+						className='animate-fade-in-up'
+					>
+						{children}
+						<Footer />
+					</motion.main>
+				</AnimatePresence>
 			</div>
 		</>
 	);
