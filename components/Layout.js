@@ -61,9 +61,9 @@ export default function Layout({ children }) {
 						className='animate-fade-in-up'
 					>
 						{children}
-						<Footer />
 					</motion.main>
 				</AnimatePresence>
+				<Footer />
 			</div>
 		</>
 	);
