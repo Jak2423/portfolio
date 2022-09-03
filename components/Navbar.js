@@ -16,22 +16,24 @@ export default function Navbar() {
 				</Link>
 				<nav className='hidden md:inline-block text-primary'>
 					<Link href='/'>
-						<a className='px-4 border-r border-dotted border-primary hover:underline'>
+						<a className='px-4 border-r border-dotted border-primary hover:underline underline-offset-2'>
 							Home
 						</a>
 					</Link>
 					<Link href='/about'>
-						<a className='px-4 border-r border-dotted border-primary hover:underline'>
+						<a className='px-4 border-r border-dotted border-primary hover:underline underline-offset-2'>
 							About
 						</a>
 					</Link>
 					<Link href='/projects'>
-						<a className='px-4 border-r border-dotted border-primary hover:underline'>
+						<a className='px-4 border-r border-dotted border-primary hover:underline underline-offset-2'>
 							Projects
 						</a>
 					</Link>
 					<Link href='/contact'>
-						<a className='px-4 hover:underline'>Contact</a>
+						<a className='px-4 hover:underline underline-offset-2'>
+							Contact
+						</a>
 					</Link>
 				</nav>
 				<button
