@@ -44,7 +44,7 @@ export default function Layout({ children }) {
 				<meta name='twitter:description' content={meta.description} />
 				<meta name='twitter:image' content={meta.image} />
 			</Head>
-			<div className='max-w-3xl mx-auto w-full px-8 py-8 min-h-screen'>
+			<div className='max-w-3xl mx-auto w-full px-8 py-8'>
 				<Navbar />
 				<AnimatePresence initial={false} exitBeforeEnter>
 					<motion.main

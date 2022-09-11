@@ -3,29 +3,36 @@
 @tailwind utilities;
 
 @layer base {
-  * {
-    @apply box-border m-0 p-0;
-  }
-  html {
-    @apply scroll-smooth;
-  }
-  body {
-    @apply bg-white h-full font-mono text-secondary text-sm md:text-base font-light leading-7;
-  }
+	* {
+		@apply box-border m-0 p-0;
+	}
+	html {
+		@apply scroll-smooth;
+	}
+	body {
+		@apply bg-white h-full font-mono text-secondary text-sm md:text-base font-light leading-7;
+	}
+}
+
+#__next {
+	@apply bg-white text-secondary;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
 @font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 100 800;
-  font-display: optional;
-  src: url(/fonts/JetBrainsMono.woff2) format('woff2');
+	font-family: 'JetBrains Mono';
+	font-style: normal;
+	font-weight: 100 800;
+	font-display: optional;
+	src: url(/fonts/JetBrainsMono.woff2) format('woff2');
 }
 
 @font-face {
-  font-family: 'JetBrains Mono';
-  font-style: italic;
-  font-weight: 100 800;
-  font-display: optional;
-  src: url(/fonts/JetBrainsMono-Italic.woff2) format('woff2');
+	font-family: 'JetBrains Mono';
+	font-style: italic;
+	font-weight: 100 800;
+	font-display: optional;
+	src: url(/fonts/JetBrainsMono-Italic.woff2) format('woff2');
 }
