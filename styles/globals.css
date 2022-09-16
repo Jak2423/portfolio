@@ -2,23 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-	* {
-		@apply box-border m-0 p-0;
-	}
-	html {
-		@apply scroll-smooth;
-	}
-	body {
-		@apply bg-white h-full font-mono text-secondary text-sm md:text-base font-light leading-7;
-	}
+* {
+	@apply box-border m-0 p-0;
 }
-
-#__next {
-	@apply bg-white text-secondary;
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
+html {
+	@apply scroll-smooth;
+	height: -webkit-fill-available;
+}
+body {
+	@apply bg-white min-h-screen relative h-[-42px] font-mono text-secondary text-sm md:text-base font-light leading-7;
 }
 
 @font-face {

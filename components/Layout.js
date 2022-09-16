@@ -54,7 +54,7 @@ export default function Layout({ children }) {
 						exit='exit'
 						variants={variants}
 						transition={{ type: 'linear', duration: 0.3 }}
-						className='animate-fade-in-up'
+						className='animate-fade-in-up mb-8'
 					>
 						{children}
 					</motion.main>
