@@ -6,11 +6,11 @@
 	@apply box-border m-0 p-0;
 }
 html {
-	@apply scroll-smooth;
+	@apply scroll-smooth h-full;
 	height: -webkit-fill-available;
 }
 body {
-	@apply bg-white min-h-screen relative h-[-42px] font-mono text-secondary text-sm md:text-base font-light leading-7;
+	@apply bg-white min-h-screen relative pb-[-42px] font-mono text-secondary text-sm md:text-base font-light leading-7;
 }
 
 @font-face {

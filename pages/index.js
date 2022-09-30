@@ -1,4 +1,5 @@
 import { FaGithub, FaEnvelope, FaTwitter } from 'react-icons/fa';
+import { Typewriter } from 'react-simple-typewriter';
 
 const ExternalLink = ({ href, children }) => (
 	<a href={href} target='_blank' rel='noopener noreferrer'>
@@ -20,7 +21,16 @@ export default function Home() {
 		<div>
 			<div className='mb-10'>
 				<h1 className='text-2xl md:text-3xl text-black my-4'>
-					👋 Hi, I&apos;m Jak.
+					👋 Hi,
+               <Typewriter
+                  words={["I'm Jak.", "I'm Javkhlan."]}
+                  loop = {true}
+                  cursor
+                  delaySpeed={5000}
+                  typeSpeed={100}
+                  deleteSpeed={100}
+                  cursorColor="#ff4545"
+               />
 				</h1>
 				<p>
 					Front-End Developer. A self-taught developer with an interest in
