@@ -25,14 +25,8 @@ export default function Layout({ children }) {
 				<title>{meta.title}</title>
 				<meta name='robots' content='follow, index' />
 				<meta content={meta.description} name='description' />
-				<meta
-					property='og:url'
-					content={`https://jak-dev.vercel.app${router.asPath}`}
-				/>
-				<link
-					rel='canonical'
-					href={`https://jak-dev.vercel.app${router.asPath}`}
-				/>
+				<meta property='og:url' content={`https://jak-dev.vercel.app${router.asPath}`} />
+				<link rel='canonical' href={`https://jak-dev.vercel.app${router.asPath}`} />
 				<meta property='og:type' content={meta.type} />
 				<meta property='og:site_name' content='JakDev' />
 				<meta property='og:description' content={meta.description} />

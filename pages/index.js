@@ -22,19 +22,18 @@ export default function Home() {
 			<div className='mb-10'>
 				<h1 className='text-2xl md:text-3xl text-black my-4'>
 					👋 Hi,
-               <Typewriter
-                  words={["I'm Jak.", "I'm Javkhlan."]}
-                  loop = {true}
-                  cursor
-                  delaySpeed={5000}
-                  typeSpeed={100}
-                  deleteSpeed={100}
-                  cursorColor="#ff4545"
-               />
+					<Typewriter
+						words={["I'm Jak.", "I'm Javkhlan.", 'Намайг Жавхлан гэдэг.']}
+						loop={true}
+						cursor
+						delaySpeed={5000}
+						typeSpeed={100}
+						deleteSpeed={100}
+						cursorColor='#ff4545'
+					/>
 				</h1>
 				<p>
-					Front-End Developer. A self-taught developer with an interest in
-					Computer Science.
+					Front-End Developer. A self-taught developer with an interest in Computer Science.
 				</p>
 				<p className='flex items-center my-2'>
 					Find me on
@@ -53,9 +52,7 @@ export default function Home() {
 				</p>
 			</div>
 			<div>
-				<h1 className='text-xl md:text-2xl text-primary my-2'>
-					Recent Projects
-				</h1>
+				<h1 className='text-xl md:text-2xl text-primary my-2'>Recent Projects</h1>
 				<ul>
 					{projects.slice(0, 3).map((project, i) => (
 						<li key={i}>
