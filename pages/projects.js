@@ -20,8 +20,8 @@ export default function Projects() {
 		<div className='mt-4'>
 			<h1 className='mb-8 text-xl md:text-2xl text-primary'>Projects</h1>
 			<p className='mb-12'>Some Things I’ve Built</p>
-			{projects.map((project) => (
-				<ProjectContainer name={project.title} link={project.link}>
+			{projects.map((project, i) => (
+				<ProjectContainer key={i} name={project.title} link={project.link}>
 					<p>{project.description}</p>
 				</ProjectContainer>
 			))}
