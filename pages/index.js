@@ -14,13 +14,18 @@ const projects = [
 		description:
 			'Start your journey by exploring courses you could study, be inspired to find the perfect course for you.',
 	},
+	{
+		name: 'Aruarian',
+		link: 'https://aruarian.vercel.app/',
+		description: 'Image Gallery with Next.js, Supabase, and Tailwind CSS',
+	},
 ];
 
 export default function Home() {
 	return (
 		<div>
 			<div className='mb-10'>
-				<h1 className='text-2xl md:text-3xl text-black my-4'>
+				<h1 className='my-4 text-2xl text-black md:text-3xl'>
 					👋 Hi,
 					<Typewriter
 						words={["I'm Jak.", "I'm Javkhlan.", 'Намайг Жавхлан гэдэг.']}
@@ -38,24 +43,24 @@ export default function Home() {
 				<p className='flex items-center my-2'>
 					Find me on
 					<ExternalLink href='https://github.com/Jak2423'>
-						<FaGithub className='hover:text-primary align-middle ml-2' />
+						<FaGithub className='ml-2 align-middle hover:text-primary' />
 					</ExternalLink>
 					,
 					<ExternalLink href='https://twitter.com/javhln'>
-						<FaTwitter className='hover:text-primary align-middle mx-2' />
+						<FaTwitter className='mx-2 align-middle hover:text-primary' />
 					</ExternalLink>
 					and
 					<ExternalLink href='mailto:javhlan0420@gmail.com'>
-						<FaEnvelope className='hover:text-primary align-middle ml-2' />
+						<FaEnvelope className='ml-2 align-middle hover:text-primary' />
 					</ExternalLink>
 					.
 				</p>
 			</div>
 			<div>
-				<h1 className='text-xl md:text-2xl text-primary my-2'>Recent Projects</h1>
+				<h1 className='my-2 text-xl md:text-2xl text-primary'>Recent Projects</h1>
 				<ul>
 					{projects.slice(0, 3).map((project, i) => (
-						<li key={i}>
+						<li key={i} className='mb-4'>
 							<a href={project.link} target='_blank' rel='noopener noreferrer'>
 								<span className='border-b border-black hover:border-b-2 hover:border-primary'>
 									{project.name}
