@@ -1,3 +1,5 @@
+import { getProjects } from '../utils/data';
+
 const ProjectContainer = ({ name, link, children }) => {
 	return (
 		<article>
@@ -12,19 +14,17 @@ const ProjectContainer = ({ name, link, children }) => {
 };
 
 export default function Projects() {
+	const projects = getProjects();
+
 	return (
 		<div className='mt-4'>
 			<h1 className='mb-8 text-xl md:text-2xl text-primary'>Projects</h1>
 			<p className='mb-12'>Some Things I’ve Built</p>
-			<ProjectContainer name='Botgo' link='https://botgo.vercel.app/'>
-				<p>
-					Start your journey by exploring courses you could study, be inspired to find the
-					perfect course for you.
-				</p>
-			</ProjectContainer>
-			<ProjectContainer name='Aruarian' link='https://aruarian.vercel.app/'>
-				<p>Image Gallery with Next.js, Supabase, and Tailwind CSS</p>
-			</ProjectContainer>
+			{projects.map((project) => (
+				<ProjectContainer name={project.title} link={project.link}>
+					<p>{project.description}</p>
+				</ProjectContainer>
+			))}
 		</div>
 	);
 }

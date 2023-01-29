@@ -1,5 +1,6 @@
 import { FaGithub, FaEnvelope, FaTwitter } from 'react-icons/fa';
 import { Typewriter } from 'react-simple-typewriter';
+import { getProjects } from '../utils/data';
 
 const ExternalLink = ({ href, children }) => (
 	<a href={href} target='_blank' rel='noopener noreferrer'>
@@ -7,21 +8,9 @@ const ExternalLink = ({ href, children }) => (
 	</a>
 );
 
-const projects = [
-	{
-		name: 'Botgo',
-		link: 'https://botgo.vercel.app/',
-		description:
-			'Start your journey by exploring courses you could study, be inspired to find the perfect course for you.',
-	},
-	{
-		name: 'Aruarian',
-		link: 'https://aruarian.vercel.app/',
-		description: 'Image Gallery with Next.js, Supabase, and Tailwind CSS',
-	},
-];
-
 export default function Home() {
+	const projects = getProjects();
+
 	return (
 		<div>
 			<div className='mb-10'>
@@ -63,7 +52,7 @@ export default function Home() {
 						<li key={i} className='mb-4'>
 							<a href={project.link} target='_blank' rel='noopener noreferrer'>
 								<span className='border-b border-black hover:border-b-2 hover:border-primary'>
-									{project.name}
+									{project.title}
 								</span>
 							</a>
 							: {project.description}
