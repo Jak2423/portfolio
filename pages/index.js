@@ -17,7 +17,7 @@ export default function Home() {
 				<h1 className='my-4 text-2xl text-black md:text-3xl'>
 					👋 Hi,
 					<Typewriter
-						words={["I'm Jak.", "I'm Javkhlan.", 'Намайг Жавхлан гэдэг.']}
+						words={["I'm Javkhlan.", 'Намайг Жавхлан гэдэг.']}
 						loop={true}
 						cursor
 						delaySpeed={5000}
