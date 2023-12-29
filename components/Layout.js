@@ -1,8 +1,8 @@
+import { AnimatePresence, motion } from 'framer-motion';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 import Footer from './Footer';
 import Navbar from './Navbar';
-import { useRouter } from 'next/router';
-import { motion, AnimatePresence } from 'framer-motion';
 
 const variants = {
 	hidden: { opacity: 0, x: 0, y: -10 },

@@ -8,11 +8,13 @@ export default function About() {
 			</p>
 			<p className='my-4'>My skills are:</p>
 			<ul className='my-4 pl-8 list-disc'>
-				<li>Javascript (ES6+)</li>
+				<li>Javascript</li>
+				<li>Typescript</li>
 				<li>React</li>
 				<li>Next.js</li>
 				<li>Tailwind CSS</li>
 				<li>Flutter</li>
+				<li>Java</li>
 			</ul>
 		</div>
 	);

@@ -1,4 +1,5 @@
-import { FaGithub, FaEnvelope, FaTwitter } from 'react-icons/fa';
+import { FaEnvelope, FaGithub } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 import { Typewriter } from 'react-simple-typewriter';
 import { getProjects } from '../utils/data';
 
@@ -26,9 +27,7 @@ export default function Home() {
 						cursorColor='#ff4545'
 					/>
 				</h1>
-				<p>
-					Front-End Developer. A self-taught developer with an interest in Computer Science.
-				</p>
+				<p>A self-taught developer with an interest in Computer Science.</p>
 				<p className='flex items-center my-2'>
 					Find me on
 					<ExternalLink href='https://github.com/Jak2423'>
@@ -36,7 +35,7 @@ export default function Home() {
 					</ExternalLink>
 					,
 					<ExternalLink href='https://twitter.com/javhln'>
-						<FaTwitter className='mx-2 align-middle hover:text-primary' />
+						<FaXTwitter className='mx-2 align-middle hover:text-primary' />
 					</ExternalLink>
 					and
 					<ExternalLink href='mailto:javhlan0420@gmail.com'>
