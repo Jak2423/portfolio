@@ -15,7 +15,7 @@ export default function Layout({ children }) {
 	const meta = {
 		title: 'Jak - Developer',
 		description: `Software Engineer based in Mongolia, a student at National University of Mongolia.`,
-		image: 'https://jak-dev.vercel.app/static/images/banner.png',
+		image: 'https://javkhlan.vercel.app/static/images/banner.png',
 		type: 'website',
 	};
 
@@ -25,15 +25,15 @@ export default function Layout({ children }) {
 				<title>{meta.title}</title>
 				<meta name='robots' content='follow, index' />
 				<meta content={meta.description} name='description' />
-				<meta property='og:url' content={`https://jak-dev.vercel.app${router.asPath}`} />
-				<link rel='canonical' href={`https://jak-dev.vercel.app${router.asPath}`} />
+				<meta property='og:url' content={`https://javkhlan.vercel.app${router.asPath}`} />
+				<link rel='canonical' href={`https://javkhlan.vercel.app${router.asPath}`} />
 				<meta property='og:type' content={meta.type} />
 				<meta property='og:site_name' content='JakDev' />
 				<meta property='og:description' content={meta.description} />
 				<meta property='og:title' content={meta.title} />
 				<meta property='og:image' content={meta.image} />
 				<meta name='twitter:card' content='summary_large_image' />
-				<meta property='twitter:url' content='https://jak-dev.vercel.app' />
+				<meta property='twitter:url' content='https://javkhlan.vercel.app' />
 				<meta name='twitter:title' content={meta.title} />
 				<meta name='twitter:description' content={meta.description} />
 				<meta name='twitter:image' content={meta.image} />
